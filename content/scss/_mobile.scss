@@ -1,0 +1,310 @@
+body {
+}
+.flex {
+  display: flex;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+%centerdiv-xaxis {
+  display: flex;
+  justify-content: center;
+}
+header {
+  width: 100%;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-size: 100% 100%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+
+  .logo {
+    width: 115px;
+    height: 40px;
+  }
+  .header-center {
+    text-align: center;
+  }
+  button {
+    @extend %centerdiv-xaxis;
+    background-color: $Sunglow;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 2em;
+    border: none;
+    padding: 1em;
+    svg {
+      padding-right: 1em;
+      //   position: relative;
+      //   bottom: 2px;
+    }
+  }
+  .tab3button {
+    margin: 4em;
+    @extend %centerdiv-xaxis;
+    .header-bottom {
+      position: relative;
+      svg {
+        position: absolute;
+        bottom: 1.8em;
+      }
+    }
+  }
+}
+.section2 {
+  padding-right: 1em;
+}
+.section3 {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  .Card {
+    display: inline-block;
+  }
+}
+
+.section4 {
+  margin: 1em;
+  @extend %centerdiv-xaxis;
+  div {
+    margin: 1em;
+  }
+}
+%card {
+  padding: 0 1em 1em 1em;
+  background-color: $Magnolia;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 1em;
+  margin: auto;
+  border-radius: 2em;
+  > div {
+    margin-bottom: 1em;
+  }
+
+  p,
+  h5 {
+    padding: 0.5em;
+  }
+}
+
+.section5 {
+  @extend %card;
+  svg {
+    position: relative;
+    bottom: 0;
+    right: 80px;
+  }
+}
+.section6 {
+  padding: 1em;
+  margin: 2em 0;
+  box-sizing: content-box;
+}
+%card-color {
+  margin: 2em;
+  border-radius: 2em;
+  // background-color: $Peach;
+  padding: 1em;
+  box-shadow: 9px 5px 0px 0px $black;
+  border: 1px solid black;
+  .upperCard {
+    border-bottom: 1px $Quick-Silver solid;
+    padding: 1em 0;
+
+    p {
+      margin-top: 1em;
+    }
+    h3 {
+      margin: 0.3em;
+    }
+  }
+  .midCard {
+    margin: 2em 0;
+    .todoCheck {
+      display: flex;
+      margin: 1em 0;
+      svg {
+        padding-left: 0.3em;
+      }
+    }
+  }
+  .lowerCard {
+    margin: 2em 0 1em 0;
+
+    button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 1em;
+      padding: 1em;
+      margin-top: 2em;
+      svg {
+        margin: 0 1em;
+      }
+    }
+  }
+}
+.section7 {
+  width: 100%;
+  margin: auto;
+
+  .card-color1 {
+    @extend %card-color;
+    background-color: $Peach;
+  }
+  .card-color2 {
+    @extend %card-color;
+    background-color: $Dark-Slate-Blue;
+    .lowerCard {
+      button {
+        border-color: white;
+      }
+    }
+  }
+  .card-color3 {
+    @extend %card-color;
+    background-color: $Peach;
+  }
+}
+.section8 {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+%ara2 {
+  margin: 1em;
+  background-color: $Magnolia;
+  padding: 0.5em;
+
+  border-radius: 2em;
+  .upperara2 {
+    margin: 1em;
+  }
+  .midara2 {
+    display: flex;
+    margin: 1em 0;
+    p {
+      padding: 0 1em;
+      position: relative;
+      top: 10px;
+    }
+  }
+  .lowerara2 {
+    margin: 1em;
+  }
+}
+.section9 {
+  .ara21 {
+    @extend %ara2;
+  }
+  .ara22 {
+    @extend %ara2;
+  }
+  .ara23 {
+    @extend %ara2;
+  }
+}
+.section10 {
+  padding: 1em;
+  margin: 2em 0;
+  box-sizing: content-box;
+}
+.section11 {
+  margin: 2em;
+  border-radius: 2em;
+  padding: 1em;
+  box-shadow: 9px 5px 0px 0px $black;
+  border: 1px solid black;
+  background-color: $Peach;
+  .info_1 {
+    input {
+      width: 90%;
+      padding: 1em 1em;
+      border: 1px black solid;
+      border-radius: 1em;
+      color: $gray-cement;
+    }
+  }
+  .info_2 {
+    textarea {
+      border: 1px solid black;
+      border-radius: 2em;
+      width: 90%;
+      resize: none;
+
+      padding: 1em;
+      color: $gray-cement;
+    }
+  }
+  .info-button {
+    button {
+      background-color: $black;
+      color: $white;
+      width: 95%;
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 1em;
+    }
+  }
+  h3 {
+    margin: 1em 0;
+  }
+}
+.section12 {
+  @extend %card;
+  width: 85%;
+  background-color: $white;
+
+  p {
+    padding: 0.5em 0;
+  }
+}
+footer {
+  padding: 2em;
+
+  background-color: $black;
+  svg {
+    margin: 1em 0;
+  }
+  .logodiv {
+    margin: 1em 0;
+  }
+  p {
+    color: $gray-lead;
+    font-size: $font-size-sm;
+    font-weight: $font-regular;
+    line-height: $line-height-sm;
+    padding-bottom: 0.5em;
+  }
+  h5 {
+    color: $white;
+    font-size: $font-size-m;
+    font-weight: $font-bold;
+    padding-bottom: 0.5em;
+  }
+  .footer-links {
+    display: flex;
+    div {
+      width: 50%;
+    }
+  }
+  .footer-lower {
+    border-top: 1px solid $gray-lead;
+
+    .date {
+      margin: 1em 0;
+      padding-top: 1em;
+    }
+  }
+}

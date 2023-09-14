@@ -1,0 +1,43 @@
+@import "./variables";
+
+$font-sizes-map: (
+  "font-size-sm": $font-size-sm,
+  "font-size-xs": $font-size-xs,
+  "font-size-m": $font-size-m,
+  "font-size-lg": $font-size-lg,
+  "font-size-xl": $font-size-xl,
+  "font-size-xxl": $font-size-xxl,
+);
+
+@each $name, $value in $font-sizes-map {
+  .#{$name} {
+    font-size: $value;
+  }
+}
+$font-sizes-map: (
+  "line-height-sm": $line-height-sm,
+  "line-height-m": $line-height-m,
+  "line-height-lg": $line-height-lg,
+  "line-height-xl": $line-height-xl,
+  "line-height-xs": $line-height-xs,
+);
+
+@each $name, $value in $font-sizes-map {
+  .#{$name} {
+    line-height: $value;
+  }
+}
+$font-weights-map: (
+  "font-regular": $font-regular,
+  "font-semi-bold": $font-semi-bold,
+  "font-bold": $font-bold,
+  "font-lighter": $font-lighter,
+  "font-medium": $font-medium,
+);
+
+// @each Sass loop to generate classes
+@each $name, $value in $font-weights-map {
+  .#{$name} {
+    font-weight: $value;
+  }
+}

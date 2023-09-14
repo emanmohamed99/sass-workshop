@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "lames";
+  src: url("../fonts/LamaSans-regular.otf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "lames";
+  src: url("../fonts/LamaSans-Bold.otf");
+  font-weight: 700;
+}
+* {
+  font-family: lames;
+  margin: 0;
+}
+@import "./utils/colors";
+@import "./utils/typography";
+@import "./grid";
+@import "./mobile";
